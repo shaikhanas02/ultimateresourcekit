@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0/dist/chartjs-plugin-datalabels.min.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/38c36dd0e7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <section id="nav">
+            <div class="search">
+                <i class="fa-solid fa-dove"></i><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="home"><i class="fa-solid fa-house"></i>
+                <i class="fa-regular fa-newspaper"></i>
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="exit"><i class="fa-regular fa-bell"></i>
+                <i class="fa-solid fa-arrow-right-from-bracket"></i></div>
+        </section>
+    <section id="profile">
+        <div class="name">
+            <span><img src="./mike.jpg" alt=""></span>
+            <span><h1>Hi Mike,</h1>
+            <p>welcome back</p></span>
+        </div>
+        <div class="today">
+            <h4>Today</h4>
+            <h1>$19,892</h1>
+            <p>Account Balance</p>
+            <h3>$4000</h3>
+            <p>Year-to-Date Contributions</p>
+            <h3>$1,892</h3>
+            <p>Total Interest</p>
+            <button>I want to <i class="fa-solid fa-sort-down"></i> </button>
+        </div>
+        <div class="recent">
+            <h1>Recent Transactions</h1>
+            <p>2020-08-07</p>
+            <h4>Withdrawl Transfer to Bank-XXX11</h4>
+            <p>2020-07-21</p>
+            <h4>Withdrawl Transfer to Bank-XXX11</h4>
+            <p>2020-07-16</p>
+            <h4>Withdrawl Transfer to Bank-XXX11</h4>
+        </div>
+    </section>
+    <section id="chart">
+        <div class="income"><p>Retirement Income</p>
+        <h2>Starting Year 2056</h2></div>
+        <div class="income-card">
+            <div class="card1"> 
+                <h1>$300,000</h1>
+                <p>My Goal</p>
+            </div>
+            <div class="card2">
+                <h1>59%</h1>
+                <p>Goal Achieved</p>
+            </div>
+            <div class="card3">
+                <h1>$300</h1>
+                <p>Est. Monthly Income</p>
+            </div>
+        </div>
+        <h1>Contributions Overtime</h1>
+        <canvas id="myChart"></canvas>
+        <span><h3>How do I compare to my peers</h3>
+            <p>These numbers represent current goal achievement</p></span>
+    <div class="info">
+        <div class="drops">
+<p>Age: <select name="" id="">
+    <option value="">Under 30</option>
+    <option value="">Under 40</option>
+    <option value="">Under 50</option>
+</select></p>
+<p>Salary: <select name="" id="">
+    <option value="">K 20 - K 30</option>
+    <option value="">K 30 - K 40</option>
+    <option value="">K 40 - K 50</option>
+</select></p>
+<p>Gender: <select name="" id="">
+    <option value="">Male</option>
+    <option value="">Female</option>
+    <option value="">Other</option>
+
+</select></p>
+        </div>
+        <div class="stats">
+        <div style="width: 80px; height: 80px; position: relative; "><p id="bar1"></p><canvas id="myCircularPercentageChart1"></canvas></div>
+        <div style="width: 80px; height: 80px;position: relative;"><p id="bar2"></p><canvas id="myCircularPercentageChart2"></canvas></div>
+        <div style="width: 80px; height: 80px;position: relative;"><p id="bar3"></p><canvas id="myCircularPercentageChart3"></canvas></div>
+    </div>
+    </div>
+    </section>
+    <section id="menu">
+        <div class="retire"> 
+        <h3>Retirement Strategy</h3>
+        <p>Employee Contribution</p>
+        <div class="input">
+        <input onchange="range(this)" type="range" min="0" max="100"><span style="font-weight: 600;">0</span></div>
+        <p>Retirement Age</p>
+        <div class="input">
+        <input onchange="range(this)" type="range" min="0" max="100"><span style="font-weight: 600;">0</span>
+    </div>
+        <h5>Employee Contribution <span>8.4%</span></h5>
+        <h5>Interest Rate <span>5%</span></h5>
+        <div style="text-align: center;"><button>Update</button></div>
+        <p style="color: blue; margin-top: 25px ; text-align: center;"
+        >View Help Docs ></p>
+    </div>
+
+        <div class="adv">
+            <p>Are you considering a</p>
+            <p style="font-weight: 800;">Housing Advance?</p>
+            <p style="color: grey;">Limited time reduced interest</p>
+            <p style="color: blue;">Learn more ></p>
+
+        </div>
+
+
+
+    </section>
+    </div>
+    <div class="phone-home"><i class="fa-solid fa-house"></i>
+        <i class="fa-regular fa-newspaper"></i>
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-user"></i>
+    </div>
+    
+    
+    <script src="./script.js"></script>
+    
+</body>
+</html>
